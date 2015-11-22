@@ -1,0 +1,7 @@
+.idea/
+.vscode/
+node_modules/
+typings/
+*.iml
+npm-debug.log
+*.md

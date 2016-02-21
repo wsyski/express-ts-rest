@@ -4,8 +4,8 @@ import http = require('http');
 
 const debug = debugModule('express-ts-rest:server');
 
-// Get port from environment and store in Express.
-const port = normalizePort(process.env.PORT || '3000');
+// get port from environment and store in Express.
+const port = normalizePort(process.env.PORT || '3001');
 app.set('port', port);
 
 // create server and listen on provided port (on all network interfaces).
@@ -43,7 +43,7 @@ function onError(error) {
 
   let bind = typeof port === 'string'
     ? 'Pipe ' + port
-    : 'Port ' + port
+    : 'Port ' + port;
 
   // handle specific listen errors with friendly messages
   switch (error.code) {

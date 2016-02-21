@@ -14,5 +14,5 @@ RUN npm install
 RUN tsd reinstall -so
 RUN gulp buildAll
 
-EXPOSE 3000
+EXPOSE 3001
 CMD ["npm", "start"]

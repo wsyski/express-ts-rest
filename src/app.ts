@@ -23,6 +23,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use('/assets', express.static(__dirname + '/assets'));
+app.use('/content', express.static(__dirname + '/assets'));
 
 app.use('/api/v1', router); // prefix all the api calls with '/api'
 
